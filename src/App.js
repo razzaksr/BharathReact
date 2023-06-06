@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import External from "./External"
+import Styles from "./Styles"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+
+  const myOwn={
+    boxShadow:'10px 10px 10px red'
+  }
+
+  return(
+    <>
+      <Styles/>
+      <External propertyOne="files/features.png" propertyTwo="1000px" propertyThree={myOwn}/>
+    </>
+  )
 }
-
-export default App;
