@@ -1,16 +1,14 @@
-import External from "./External"
-import Styles from "./Styles"
+// import { onEvent } from "./Event"
+import { Forms } from "./Forms"
+import { Reception } from "./Reception"
 
 export default function App(){
 
-  const myOwn={
-    boxShadow:'10px 10px 10px red'
-  }
-
   return(
     <>
-      <Styles/>
-      <External propertyOne="files/features.png" propertyTwo="1000px" propertyThree={myOwn}/>
+    <Forms/>
+      {/* <Reception gather={onEvent}/> */}
+      {/* <Event/> */}
     </>
   )
 }
